@@ -12,7 +12,7 @@ public class AnimalTest {
 
     @BeforeAll
     public static void createAnimal(){
-        animal = new Animal(4, "Tom", false, 12.5, 40.7, 4);
+        animal = new Animal(4, true, "Tom", 12.5, 40.7, 4);
     }
 
     @AfterAll
@@ -52,7 +52,7 @@ public class AnimalTest {
 
     @Test
     public void testToString(){
-        animal = new Animal(4, "Tom", false, 12.5, 40.7, 4);
+        animal = new Animal(4, true, "Tom", 12.5, 40.7, 4);
         Assertions.assertEquals("Animal{name='Tom', weight=12.5, height=40.7, age=4}", animal.toString());
     }
 
